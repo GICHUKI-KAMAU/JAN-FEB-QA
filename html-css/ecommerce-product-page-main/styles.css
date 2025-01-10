@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", serif;
+}
+
+.container {
+    max-width: 1000px;  
+    margin: 0 auto;
+    padding: 0 15px;  
+    height: 70%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 0; 
+    border-bottom: 1px solid hsl(223, 64%, 98%);
+    gap: 20px;  
+}
+
+.navbar p {
+    color: hsl(219, 9%, 45%);
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.navbar h1 {
+    margin-right: 3%;  
+    font-size: 24px;  
+}
+.profile-pic{
+    width: 40px;
+    margin-left: 20px;
+
+}
+.nav-right{
+    margin-left: 20%;
+}
+
+
+.content-section {
+    display: flex;
+    padding: 3% 0;  
+    gap: 50px; 
+    height: fit-content;
+}
+
+.shoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    height: 30%;  
+}
+
+.shoes img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.variation {
+    display: flex;
+    gap: 15px; 
+}
+
+.variation img {
+    width: 70px;  
+    border-radius: 8px;
+}
+
+.details {
+    margin-left: 50px;
+    flex: 1;
+    padding: 20px 0;  
+}
+
+.details > p:first-child {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;  
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;  
+}
+
+.details h3 {
+    font-size: 32px;  
+    margin-bottom: 20px;  
+}
+
+.details > p {
+    color: #69707D;
+    line-height: 1.4;  
+    margin-bottom: 4px;
+    font-size: 14px;  
+}
+
+.price {
+    display: flex;
+    /* align-items: ; */
+    gap: 12px;  
+    margin: 20px 0;  
+    flex-direction: column;
+}
+
+.current-price{
+    display: flex;
+    align-items: center;
+
+}
+.current-price p {
+    font-size: 24px;  
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.discount p {
+    background-color: hsl(220, 13%, 13%);
+    color: hsl(0, 0%, 100%);
+    padding: 3px 6px;  
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;  
+}
+
+.previous-price p {
+    color: #B6BCC8;
+    text-decoration: line-through;
+    font-size: 14px; 
+}
+
+.buying-section {
+    display: flex;
+    gap: 12px;  
+    margin-top: 20px;  
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    background-color: #F7F8FD;
+    padding: 10px 20px;  
+    border-radius: 8px;
+    gap: 30px;  
+}
+
+.counter p {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.counter p:first-child,
+.counter p:last-child {
+    color: #FF7E1B;
+    font-size: 20px;  
+}
+
+.cart button {
+    background-color: #FF7E1B;
+    color: white;
+    border: none;
+    padding: 10px 50px;  
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;  
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-size: 14px;  
+}
+
+.attribution {
+    text-align: center;
+    padding: 15px;  
+    font-size: 12px;  
+}
+
+.attribution a {
+    color: #FF7E1B;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .content-section {
+        gap: 60px;
+        padding: 60px 0;
+    }
+
+    .details h3 {
+        font-size: 36px;
+    }
+
+    .shoes {
+        max-width: 400px;
+    }
+
+    .variation img {
+        width: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .navbar h1 {
+        font-size: 28px;
+        margin-right: 30px;
+    }
+
+    .navbar p {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .content-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .shoes {
+        max-width: 100%;
+    }
+
+    .variation {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .details {
+        padding-top: 20px;
+    }
+
+    .details h3 {
+        font-size: 32px;
+    }
+
+    .buying-section {
+        flex-direction: column;
+    }
+
+    .counter {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    .cart button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
