@@ -11,32 +11,39 @@
         <div class="header-content">
             <h1>Twitter Clone</h1>
             <div class="search-container">
-                <label>Search</label>
-                <select id="userSelect" class="search-select"></select>
+                <label for="userSelect">Search:</label>
+                <select id="userSelect" class="search-select">
+                    <option value="" disabled selected>Select a user</option>
+                </select>
             </div>
         </div>
     </header>
 
     <div class="profile-banner">
         <div class="profile-info">
-            <img src="./dp.png" alt="Profile" class="profile-picture">
+            <img src="./dp.png" alt="Profile Picture" class="profile-picture">
             <div class="profile-details">
-                <h2 class="profile-name"></h2>
-                <p class="profile-username"></p>
-                <p class="profile-website"></p>
-                <p class="profile-bio"></p>
-                <p class="profile-location"></p>
+                <h2 class="profile-name">User Name</h2>
+                <p class="profile-username">@username</p>
+                <a href="#" class="profile-website" target="_blank">website.com</a>
+                <p class="profile-bio">User bio goes here...</p>
+                <p class="profile-location">📍 Location</p>
             </div>
-
         </div>
     </div>
 
     <main class="container">
         <div class="posts-section">
-            <div id="posts"></div>
+            <h3>Posts</h3>
+            <div id="posts">
+                <p>No posts available yet. Please select a user to view posts.</p>
+            </div>
         </div>
         <div class="comments-section">
-            <div id="comments"></div>
+            <h3>Comments</h3>
+            <div id="comments">
+                <p>No comments available. Select a post to view comments.</p>
+            </div>
         </div>
     </main>
 

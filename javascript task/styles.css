@@ -50,6 +50,10 @@ body {
     padding-top: 100px;
     color: white;
 }
+.profile-info a{
+    text-decoration: none;
+    color: #536471;
+}
 
 .profile-picture {
     width: 150px;
@@ -62,7 +66,9 @@ body {
 }
 
 .profile-details {
-    margin-left: 180px;
+    margin-top: 15%;
+    margin-left: 20px;
+    color: black;
 }
 
 .container {
@@ -135,4 +141,10 @@ body {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #eee;
+}
+.verrified, .twitter{
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;    
 }
