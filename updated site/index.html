@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bazaar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Urban Bazaar</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html" id="loginBtn">Login</a></li>
+                    <li><a href="register.html" id="registerBtn">Register</a></li>
+                    <li><button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button></li>
+                    <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="messageContainer" class="message-container"></div>
+        
+        <section class="hero">
+            <h2>Discover Unique Products</h2>
+            <p>Explore our curated collection of items.</p>
+        </section>
+
+        <section class="products" id="productsSection">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="productsContainer"></div>
+        </section>
+
+        <section class="admin-section" id="adminSection" style="display: none;">
+            <h2>Admin Dashboard</h2>
+            <form id="productForm" class="product-form">
+                <input type="hidden" id="productId">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" step="0.01" placeholder="Price" required>
+                <input type="url" id="productImage" placeholder="Image URL" required>
+                <textarea id="productDescription" placeholder="Product Description" required></textarea>
+                <button type="submit" id="submitProduct">Add Product</button>
+                <button type="button" id="cancelEdit" style="display: none;">Cancel Edit</button>
+            </form>
+            <div class="products-list">
+                <h3>Product List</h3>
+                <ul id="adminProductsList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-summary">
+                <p>Total: <span id="cartTotal">$0.00</span></p>
+                <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

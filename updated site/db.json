@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "131d",
+      "name": "keya",
+      "email": "keya@gmail.com",
+      "password": "keya123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 100
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 200
+    }
+  ],
+  "cart": [
+    {
+      "id": "4f30",
+      "userId": "131d",
+      "productId": "2",
+      "name": "Product 2",
+      "price": 200,
+      "quantity": 7
+    },
+    {
+      "id": "7a49",
+      "userId": "131d",
+      "productId": "1",
+      "name": "Product 1",
+      "price": 100,
+      "quantity": 2
+    }
+  ]
+}
